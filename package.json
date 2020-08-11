@@ -1,39 +1,31 @@
 {
-  "name": "google-books-search",
-  "version": "0.9.0",
-  "description": "React-based Google Books search app",
+  "name": "google-books-app",
+  "version": "1.0.0",
   "main": "server.js",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "devenv": "concurrently 'npm run server' 'npm run client'",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mmakino/Google-Books-Search.git"
-  },
-  "author": "Motohiko Makino",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mmakino/Google-Books-Search/issues"
-  },
-  "homepage": "https://github.com/mmakino/Google-Books-Search#readme",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "concurrently": "^4.1.0",
-    "dotenv": "^7.0.0",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.19"
-  },
+  "author": "Christian Mora",
+  "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.18.10"
-  }
+    "concurrently": "^4.1.0",
+    "gh-pages": "^2.0.1",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16",
+    "react-router-dom": "^5.0.0"
+  },
+  "description": ""
 }
