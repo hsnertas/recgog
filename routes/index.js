@@ -1,7 +1,8 @@
+'use strict';
 
 const expores = require('express');
 const router = expores.Router();
-const db = require('../../../models');
+const db = require('../models');
 // return all saved books as JSON
 router.get('/', (req, res) => {
   db.Book.find({})
