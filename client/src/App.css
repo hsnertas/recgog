@@ -98,7 +98,17 @@ div.thumbnail {
   .list-overflow-container li:last-child {
     border-bottom: none;
   }
+ .list-group-item{
+   background: transparent;
+   color: white;
+   border: none;
+ }
+ .row{
+  
+   padding: 3px;
+ }
 
+ 
    /* Form */ 
 .formbtn {
     cursor: pointer;

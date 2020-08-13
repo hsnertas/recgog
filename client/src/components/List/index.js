@@ -1,6 +1,6 @@
 import React from "react";
-import Thumbnail from "./Thumbnail";
-import { Container, Row, Col } from "./Grid";
+import Thumbnail from "../Thumbnail";
+import { Container, Row, Col } from "../Grid";
 
 
 // This file exports both the List and ListItem components
