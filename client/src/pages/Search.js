@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
 import { BookListItem } from "../components/BookList";
 import API from "../utils/API";
 import { Container, Row, Col } from "../components/Grid";
@@ -36,24 +35,17 @@ class Books extends Component {
     console.log("This is the book data from handleSavedBook:")
     console.log(data);
     API.saveBook(data)
-    .then(res => alert("Your book was saved! 😄") && this.loadBooks())
-   
     .catch(err => console.log(err));
   }
 
   render() {
     return (
-      <div>
-        <Jumbotron>
-          <h1>Google Books Search</h1>
-          <h5>Search for and Save Books of Interest</h5>
-        </Jumbotron>
+      <div>     
       <Container fluid>
       <Row>
-      <Col size="md-6">
+      <Col size="md-12">
             <div>
             <form>
-                Book Search:
               <Input
                 value={this.state.search}
                 onChange={this.handleInputChange}
@@ -72,9 +64,6 @@ class Books extends Component {
             </Row>
             <Row>
             <Col size="md-12">
-              {!this.state.books.length ? (
-                <h1 id="message" className="text-center">No Books To Display</h1> 
-              ) : (
                 <div>
                   {this.state.books.map(books => {
                     return(
@@ -98,8 +87,6 @@ class Books extends Component {
                   );              
                   })}                              
                </div>
-
-              )}
             </Col>
           </Row>
       </Container>

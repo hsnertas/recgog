@@ -1,0 +1,121 @@
+
+body {
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+
+ /* Buttons */ 
+
+  .btn {
+    cursor: pointer;
+    background-color: #f50e0e;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10%;
+    margin-right: 5px;
+    
+}
+
+#btn {
+    text-decoration: none;
+    
+    color: rgb(255, 255, 255);
+}
+
+#btn:hover {
+    color: #ffff1e;
+
+}
+
+
+.delete-btn {
+    float: right;
+    color: #e74944;
+  }
+
+
+
+ /* Thumbnail */ 
+div.thumbnail {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+   /* Search */ 
+#search, #saved {
+    color: #fff;
+}
+
+#search:hover, #saved:hover {
+    color: rgb(42, 42, 192);
+}
+
+ /* Nav */ 
+#nav {
+    background: transparent;  
+    border-bottom: 5px dotted black;
+    text-align: left;
+    margin-bottom: 10px;
+    
+}
+
+ /* List */ 
+
+.list-overflow-container {
+    max-height: 545px;
+    border: 1px #DDDDDD solid;
+    border-radius: 4px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .list-overflow-container ul {
+    margin: 0;
+  }
+  
+  .list-overflow-container li {
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .list-overflow-container li * {
+    cursor: pointer;
+  }
+  
+  .list-overflow-container li a {
+    color: #2A878C;
+  }
+  
+  .list-overflow-container li:first-child {
+    border-top: none;
+  }
+  
+  .list-overflow-container li:last-child {
+    border-bottom: none;
+  }
+
+   /* Form */ 
+.formbtn {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+.formbtn:hover {
+    color: #e74944;
+    background-color: #000000;
+}
+form{
+  text-align: center;
+}
+.form-control{
+width: 70%;
+margin-right: auto;
+margin-left: auto;
+margin-top: 10px;
+}

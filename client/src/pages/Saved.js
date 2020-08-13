@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-// import { Link } from "react-router-dom";
 import {  Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 
@@ -31,11 +29,9 @@ class Saved extends Component {
   render() {
     return (
       <div>
-      <Jumbotron>
-      <h1>Books On My List</h1>
-    </Jumbotron>
+    
       <Container fluid>
-            {this.state.books.length ? (
+            
               <List>
                 {this.state.books.map(book => (
                   <ListItem
@@ -50,9 +46,8 @@ class Saved extends Component {
 
                 ))}
               </List>
-            ) : (
-              <h1 id="message" className="text-center">No Results to Display</h1>
-            )}
+  
+      
       </Container>
       </div>
     );
