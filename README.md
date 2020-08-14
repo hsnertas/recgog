@@ -8,7 +8,7 @@ Step 1 - Clone my repo using the command line below.
 
 Step 2 - Change directory to the cloned repo folder.
 
-`cd Google-Books-Search`
+`cd recgog`
 
 Step 3 - Install all required NPM packages.
 
