@@ -4,7 +4,7 @@ React-based Google Books Search app.
 ## Installation
 Step 1 - Clone my repo using the command line below.
 
-`git clone https://github.com/Antidetka/Google-Books-Search`
+`git clone https://github.com/hsnertas/recgog`
 
 Step 2 - Change directory to the cloned repo folder.
 
